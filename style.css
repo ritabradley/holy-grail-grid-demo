@@ -21,15 +21,15 @@ body {
 
 .container {
     display: grid;
-    gap: 2rem 1rem;
+    gap: 3.2rem 1.6rem;
     grid-template-areas:
         'logo main-menu main-menu'
         'content-area content-area sidebar'
         'sponsors sponsors sponsors'
         'footer footer footer';
     grid-template-columns: 2fr 6fr 4fr;
-    grid-template-rows: 3rem;
-    margin: 0 2rem;
+    grid-template-rows: 4.8rem auto;
+    margin: 0 3.2rem;
     min-height: 100vh;
 }
 
@@ -37,7 +37,7 @@ body {
     align-items: center;
     grid-area: logo;
     height: 100%;
-    line-height: 3rem;
+    line-height: 4.8rem;
 }
 
 .main-menu {
@@ -64,8 +64,13 @@ body {
     grid-area: content-area;
 }
 
+.content-area p {
+    margin: 1rem 0;
+}
+
 .sidebar {
     grid-area: sidebar;
+    padding: 1.6rem;
 }
 
 .sponsors {
