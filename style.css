@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    background-color: #fbfbfb;
     font-size: 1.6rem;
     font-family: var(--system-ui);
 }
@@ -27,15 +28,36 @@ body {
         'sponsors sponsors sponsors'
         'footer footer footer';
     grid-template-columns: 2fr 6fr 4fr;
+    grid-template-rows: 3rem;
+    margin: 0 2rem;
     min-height: 100vh;
 }
 
 .logo {
+    align-items: center;
     grid-area: logo;
+    height: 100%;
+    line-height: 3rem;
 }
 
 .main-menu {
+    align-self: center;
     grid-area: main-menu;
+    justify-self: end;
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu__item {
+    list-style-type: none;
+    font-size: 1.8rem;
+    margin-right: 0.7rem;
+}
+
+.main-menu .main-menu__item:last-of-type {
+    margin-right: 0;
 }
 
 .content-area {
